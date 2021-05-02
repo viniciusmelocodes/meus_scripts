@@ -6,3 +6,7 @@ sudo update-alternatives --set php /usr/bin/php7.4
 echo '\n****** Alterado com sucesso para versão 7.4 ******\n'
 echo '\n****** Versão atual: ******'
 php -v
+echo '\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
+php -m
+echo "<?php phpinfo(); ?>" > /home/development/info.php
+php -S localhost:8000
