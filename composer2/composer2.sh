@@ -8,4 +8,5 @@ php -r "unlink('composer-setup.php');"
 
 sudo mv composer.phar /usr/bin/composer && sudo chmod 755 /usr/bin/composer
 
+echo '\n>>>>>>>>>>> Versão do Composer instalado <<<<<<<<<<<\n'
 composer --version
