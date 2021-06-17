@@ -1,7 +1,3 @@
-echo '>>>>>>>>>>> software-properties-common <<<<<<<<<<<'
-sudo apt install -y gnupg2 ca-certificates apt-transport-https software-properties-common
-wget -qO - https://packages.sury.org/php/apt.gpg | sudo apt-key add -
-echo "deb https://packages.sury.org/php/ buster main" | sudo tee /etc/apt/sources.list.d/php.list
 echo '\n>>>>>>>>>>> ondrej/php <<<<<<<<<<<'
 sudo add-apt-repository -y ppa:ondrej/php
 echo '\n>>>>>>>>>>> Update 1 <<<<<<<<<<<'
