@@ -1,4 +1,4 @@
-// a2dismod disables the php8.0 module by removing those symlinks.
+// a2dismod disables the php8.1 module by removing those symlinks.
 sudo a2dismod php8.1
 
 // a2enmod enables php7.4 module within the apache2 configuration.
