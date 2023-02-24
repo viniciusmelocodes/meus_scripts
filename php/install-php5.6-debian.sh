@@ -13,5 +13,6 @@ echo '\n>>>>>>>>>>> Versão PHP <<<<<<<<<<<'
 php -v
 echo '\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
 php -m
-echo "<?php phpinfo(); ?>" > /home/development/info.php
-php -S localhost:8000
+echo "<?php phpinfo(); ?>" > /home/vinicius/dev/info.php
+cd /home/vinicius/dev
+php -S localhost:10000
