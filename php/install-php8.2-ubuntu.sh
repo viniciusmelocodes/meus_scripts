@@ -3,4 +3,4 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 
 sudo apt-get install php8.2
-sudo apt-get install php8.2-cli php8.2-common php8.2-opcache php8.2-mysql php8.2-mbstring php8.2-zip php8.2-fpm php8.2-intl php8.2-xml
+sudo apt-get install php8.2-cli php8.2-common php8.2-opcache php8.2-mysql php8.2-mbstring php8.2-zip php8.2-fpm php8.2-intl php8.2-xml php8.2-zip

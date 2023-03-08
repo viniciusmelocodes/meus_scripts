@@ -5,7 +5,7 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 echo '\n>>>>>>>>>>> Update 1 <<<<<<<<<<<'
 sudo apt update
 echo '\n>>>>>>>>>>> PHP 8.0 <<<<<<<<<<<'
-sudo apt install -y php8.0-cli php8.0-common php8.0-mysql php8.0-gd php8.0-xml php8.0-curl php8.0-mbstring composer
+sudo apt install -y php8.0-cli php8.0-common php8.0-mysql php8.0-gd php8.0-xml php8.0-curl php8.0-mbstring php8.0-zip
 echo '\n>>>>>>>>>>> Update 2 <<<<<<<<<<<'
 sudo apt update
 echo '\n>>>>>>>>>>> Versão PHP <<<<<<<<<<<'
