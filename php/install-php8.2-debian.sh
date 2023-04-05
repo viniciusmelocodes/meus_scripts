@@ -6,12 +6,7 @@ echo '\n>>>>>>>>>>> Update 1 <<<<<<<<<<<'
 sudo apt update
 echo '\n>>>>>>>>>>> PHP 8.2 <<<<<<<<<<<'
 sudo apt install -y php8.2-cli php8.2-common php8.2-mysql php8.2-gd php8.2-xml php8.2-curl php8.2-mbstring php8.2-zip
-echo '\n>>>>>>>>>>> Update 2 <<<<<<<<<<<'
-sudo apt update
 echo '\n>>>>>>>>>>> Versão PHP <<<<<<<<<<<'
 php -v
-echo '\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
+echo '\n\n\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
 php -m
-echo "<?php phpinfo(); ?>" > /home/vinicius/dev/info.php
-cd /home/vinicius/dev
-php -S localhost:10000

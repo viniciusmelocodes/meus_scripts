@@ -13,3 +13,7 @@ sudo update-alternatives --set phar /usr/bin/phar8.1
 sudo update-alternatives --set phar.phar /usr/bin/phar.phar8.1
 sudo update-alternatives --set phpize /usr/bin/phpize8.1
 sudo update-alternatives --set php-config /usr/bin/php-config8.1
+echo '\n>>>>>>>>>>> Versão PHP <<<<<<<<<<<'
+php -v
+echo '\n\n\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
+php -m

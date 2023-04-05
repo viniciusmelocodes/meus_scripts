@@ -13,3 +13,7 @@ sudo update-alternatives --set phar /usr/bin/phar7.3
 sudo update-alternatives --set phar.phar /usr/bin/phar.phar7.3
 sudo update-alternatives --set phpize /usr/bin/phpize7.3
 sudo update-alternatives --set php-config /usr/bin/php-config7.3
+echo '\n>>>>>>>>>>> Versão PHP <<<<<<<<<<<'
+php -v
+echo '\n\n\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
+php -m

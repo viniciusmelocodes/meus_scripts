@@ -6,12 +6,7 @@ echo '\n>>>>>>>>>>> Update 1 <<<<<<<<<<<'
 sudo apt update
 echo '\n>>>>>>>>>>> PHP 8.3 <<<<<<<<<<<'
 sudo apt install -y php8.3-cli php8.3-common php8.3-mysql php8.3-gd php8.3-xml php8.3-curl php8.3-mbstring php8.3-zip
-echo '\n>>>>>>>>>>> Update 2 <<<<<<<<<<<'
-sudo apt update
 echo '\n>>>>>>>>>>> Versão PHP <<<<<<<<<<<'
 php -v
-echo '\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
+echo '\n\n\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
 php -m
-echo "<?php phpinfo(); ?>" > /home/vinicius/dev/info.php
-cd /home/vinicius/dev
-php -S localhost:10000

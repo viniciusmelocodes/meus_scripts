@@ -10,8 +10,5 @@ echo '\n>>>>>>>>>>> Update 2 <<<<<<<<<<<'
 sudo apt update
 echo '\n>>>>>>>>>>> Versão PHP <<<<<<<<<<<'
 php -v
-echo '\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
+echo '\n\n\n>>>>>>>>>>> Módulos PHP <<<<<<<<<<<'
 php -m
-echo "<?php phpinfo(); ?>" > /home/vinicius/dev/info.php
-cd /home/vinicius/dev
-php -S localhost:10000
