@@ -20,6 +20,7 @@ flatpak install flathub org.remmina.Remmina
 flatpak install flathub org.filezillaproject.Filezilla
 flatpak install flathub com.wps.Office
 flatpak install flathub io.github.Figma_Linux.figma_linux
+flatpak install flathub io.github.jorchube.monitorets
 
 cd ~
 mkdir .ssh
