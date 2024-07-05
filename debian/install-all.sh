@@ -3,6 +3,7 @@ apt upgrade
 
 apt install -y git wget curl xclip docker docker-compose flatpak gnome-software-plugin-flatpak
 apt install -f
+wget -qO- https://get.pnpm.io/install.sh | sh -
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install -y flathub com.github.IsmaelMartinez.teams_for_linux
@@ -33,3 +34,5 @@ echo "sugestão de nome: my-key"
 ssh-keygen
 xclip -sel clip < key.pub
 ssh-add key
+
+source /home/vinicius/.bashrc
