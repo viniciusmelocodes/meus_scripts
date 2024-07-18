@@ -25,6 +25,7 @@ flatpak install -y flathub com.microsoft.Edge
 flatpak install -y flathub org.videolan.VLC
 flatpak install -y flathub io.github.mahmoudbahaa.outlook_for_linux
 flatpak install -y flathub org.kde.isoimagewriter
+flatpak install -y flathub com.spotify.Client
 
 cd ~
 mkdir .ssh
