@@ -7,7 +7,6 @@ wget -qO- https://get.pnpm.io/install.sh | sh -
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install -y flathub com.github.IsmaelMartinez.teams_for_linux
-flatpak install -y flathub com.visualstudio.code
 flatpak install -y flathub io.dbeaver.DBeaverCommunity
 flatpak install -y flathub it.fabiodistasio.AntaresSQL
 flatpak install -y flathub com.discordapp.Discord
@@ -28,6 +27,7 @@ flatpak install -y flathub org.kde.isoimagewriter
 flatpak install -y flathub com.spotify.Client
 flatpak install -y flathub io.missioncenter.MissionCenter
 flatpak install -y flathub org.kde.umbrello
+flatpak install -y flathub com.vscodium.codium
 
 cd ~
 mkdir .ssh
