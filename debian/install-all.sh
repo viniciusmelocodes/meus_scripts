@@ -39,3 +39,5 @@ xclip -sel clip < key.pub
 ssh-add key
 
 source /home/vinicius/.bashrc
+
+apt update
