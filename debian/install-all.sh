@@ -1,9 +1,9 @@
 sudo apt update
 apt upgrade
 
-apt install -y git wget curl xclip docker docker-compose flatpak gnome-software-plugin-flatpak
+apt install -y git wget curl xclip docker docker-compose flatpak gnome-software-plugin-flatpak nodejs npm zsh
 apt install -f
-wget -qO- https://get.pnpm.io/install.sh | sh -
+#wget -qO- https://get.pnpm.io/install.sh | sh -
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install -y flathub com.rtosta.zapzap
@@ -38,6 +38,6 @@ ssh-keygen
 xclip -sel clip < key.pub
 ssh-add key
 
-source /home/vinicius/.bashrc
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
-apt update
+source /home/vinicius/.bashrc
