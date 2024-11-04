@@ -1,9 +1,16 @@
 sudo apt update
 apt upgrade
 
-apt install -y git wget curl xclip docker docker-compose flatpak gnome-software-plugin-flatpak nodejs npm zsh
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
+
+apt install -y git wget curl xclip docker docker-compose flatpak gnome-software-plugin-flatpak nodejs npm zsh default-jdk default-jre codium
 apt install -f
-#wget -qO- https://get.pnpm.io/install.sh | sh -
+
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install -y flathub com.rtosta.zapzap
@@ -27,7 +34,7 @@ flatpak install -y flathub org.kde.isoimagewriter
 flatpak install -y flathub com.spotify.Client
 flatpak install -y flathub io.missioncenter.MissionCenter
 flatpak install -y flathub org.kde.umbrello
-flatpak install -y flathub com.vscodium.codium
+flatpak install -y flathub org.gimp.GIMP
 
 cd ~
 mkdir .ssh
@@ -38,6 +45,10 @@ ssh-keygen
 xclip -sel clip < key.pub
 ssh-add key
 
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+# ZSH
+# sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+# PNPM
+#wget -qO- https://get.pnpm.io/install.sh | sh -
 
 source /home/vinicius/.bashrc
