@@ -55,6 +55,9 @@ source /home/vinicius/.bashrc
 # ZSH
 if zenity --question --text="Deseja instalar Oh My Zsh?"; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+    echo "Agora rode: nano ~/.bashrc"
+    echo "Inclue nesse arquivo o comando: exec zsh"
 fi
 
 source /home/vinicius/.bashrc
