@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 sudo apt update
 apt upgrade
 
@@ -35,6 +37,7 @@ flatpak install -y flathub com.spotify.Client
 flatpak install -y flathub io.missioncenter.MissionCenter
 flatpak install -y flathub org.kde.umbrello
 flatpak install -y flathub org.gimp.GIMP
+flatpak install -y flathub org.mozilla.Thunderbird
 
 cd ~
 mkdir .ssh
